@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult Video Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x300/333333/c0392b?text=Welcome+to+the+Adult+Video+Library');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            max-width: 100%; /* Full width */
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #000;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 10px;
+        }
+        .thumbnail:hover .overlay {
+            opacity: 1;
+        }
+        .video-title {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .thumbnail {
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adult Video Library</h1>
+</header>
+
+<div class="banner">
+  <img src="https://t4.ftcdn.net/jpg/03/88/00/31/240_F_388003130_yUkN3cuwE7Cp5HgfJ8Pt1Ypy198pp7md.jpg" alt="Banner">
+</div>
+
+<div class="container">
+    <!-- Thumbnails (replace src with actual video thumbnail URLs) -->
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 1"><div class="overlay"><div class="video-title">Video 1</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 2"><div class="overlay"><div class="video-title">Video 2</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 3"><div class="overlay"><div class="video-title">Video 3</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 4"><div class="overlay"><div class="video-title">Video 4</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 5"><div class="overlay"><div class="video-title">Video 5</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 6"><div class="overlay"><div class="video-title">Video 6</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 7"><div class="overlay"><div class="video-title">Video 7</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 8"><div class="overlay"><div class="video-title">Video 8</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 9"><div class="overlay"><div class="video-title">Video 9</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 10"><div class="overlay"><div class="video-title">Video 10</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 11"><div class="overlay"><div class="video-title">Video 11</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 12"><div class="overlay"><div class="video-title">Video 12</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 13"><div class="overlay"><div class="video-title">Video 13</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 14"><div class="overlay"><div class="video-title">Video 14</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 15"><div class="overlay"><div class="video-title">Video 15</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 16"><div class="overlay"><div class="video-title">Video 16</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 17"><div class="overlay"><div class="video-title">Video 17</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 18"><div class="overlay"><div class="video-title">Video 18</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 19"><div class="overlay"><div class="video-title">Video 19</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 20"><div class="overlay"><div class="video-title">Video 20</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 21"><div class="overlay"><div class="video-title">Video 21</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 22"><div class="overlay"><div class="video-title">Video 22</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 23"><div class="overlay"><div class="video-title">Video 23</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 24"><div class="overlay"><div class="video-title">Video 24</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 25"><div class="overlay"><div class="video-title">Video 25</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 26"><div class="overlay"><div class="video-title">Video 26</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 27"><div class="overlay"><div class="video-title">Video 27</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 28"><div class="overlay"><div class="video-title">Video 28</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 29"><div class="overlay"><div class="video-title">Video 29</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 30"><div class="overlay"><div class="video-title">Video 30</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 31"><div class="overlay"><div class="video-title">Video 31</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 32"><div class="overlay"><div class="video-title">Video 32</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 33"><div class="overlay"><div class="video-title">Video 33</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 34"><div class="overlay"><div class="video-title">Video 34</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 35"><div class="overlay"><div class="video-title">Video 35</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 36"><div class="overlay"><div class="video-title">Video 36</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 37"><div class="overlay"><div class="video-title">Video 37</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 38"><div class="overlay"><div class="video-title">Video 38</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 39"><div class="overlay"><div class="video-title">Video 39</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 40"><div class="overlay"><div class="video-title">Video 40</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 41"><div class="overlay"><div class="video-title">Video 41</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 42"><div class="overlay"><div class="video-title">Video 42</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 43"><div class="overlay"><div class="video-title">Video 43</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 44"><div class="overlay"><div class="video-title">Video 44</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 45"><div class="overlay"><div class="video-title">Video 45</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 46"><div class="overlay"><div class="video-title">Video 46</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 47"><div class="overlay"><div class="video-title">Video 47</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 48"><div class="overlay"><div class="video-title">Video 48</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 49"><div class="overlay"><div class="video-title">Video 49</div></div></div>
+    <div class="thumbnail"><img src="https://via.placeholder.com/200x120" alt="Video 50"><div class="overlay"><div class="video-title">Video 50</div></div></div>
+</div>
+
+</body>
+</html>
